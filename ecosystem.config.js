@@ -23,20 +23,20 @@ module.exports = {
    */
   deploy : {
     production : {
-      user : 'c4',                                                             //也可以useradd另建用户
+      user : 'root',                                                             //也可以useradd另建用户
       host : '47.97.82.183',                                                  // 服务器地址
       port : '22',                                                            // 端口号
       ref  : 'origin/master',
-      repo : 'git@github.com:stevenxu9494/auchi.git/backend',            // github上的项目地址
+      repo : 'git@github.com:stevenxu9494/auchi_backend.git',            // github上的项目地址
       path : '/www/xc/depoly',                                                //  服务器上放项目的目录
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
-      user : 'c4',
+      user : 'root',
       host : '47.97.82.183',
       port : '22',                                                            // 端口号
       ref  : 'origin/master',
-      repo : 'git@github.com:stevenxu9494/auchi.git/backend',
+      repo : 'git@github.com:stevenxu9494/auchi_backend.git',
       path : '/www/xc/depoly',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
