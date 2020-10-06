@@ -28,7 +28,7 @@ module.exports = {
       port : '22',                                                            // 端口号
       ref  : 'origin/main',
       repo : 'git@github.com:stevenxu9494/auchi_backend.git',            // github上的项目地址
-      path : '/www/xc/depoly',                                                //  服务器上放项目的目录
+      path : '/www/xc/deploy',                                                //  服务器上放项目的目录
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
@@ -37,7 +37,7 @@ module.exports = {
       port : '22',                                                            // 端口号
       ref  : 'origin/main',
       repo : 'git@github.com:stevenxu9494/auchi_backend.git',
-      path : '/www/xc/depoly',
+      path : '/www/xc/deploy',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'
