@@ -13,8 +13,7 @@ module.exports = {
       },
       env_production : {
         NODE_ENV: 'production'
-      },
-      interpreter : 'node@12.14.1'
+      }
     }
   ],
 
