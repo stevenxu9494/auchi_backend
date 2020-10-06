@@ -29,7 +29,7 @@ module.exports = {
       ref  : 'origin/main',
       repo : 'git@github.com:stevenxu9494/auchi_backend.git',            // github上的项目地址
       path : '/www/xc/deploy',                                                //  服务器上放项目的目录
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'nvm use 12.14.1 && npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
       user : 'root',
@@ -38,7 +38,7 @@ module.exports = {
       ref  : 'origin/main',
       repo : 'git@github.com:stevenxu9494/auchi_backend.git',
       path : '/www/xc/deploy',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
+      'post-deploy' : 'nvm use 12.14.1 && npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'
       }
