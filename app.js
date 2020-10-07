@@ -11,7 +11,7 @@ app.use(cors({
       if (ctx.url === '/xc') {
           return "*"; // 允许来自所有域名请求
       }
-      return '101.190.45.246'; // 这样就能只允许 http://101.190.45.246:8080 这个域名的请求了
+      return '0.0.0.0:8080'; // 这样就能只允许 http://101.190.45.246:8080 这个域名的请求了
   },
   exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'],
   maxAge: 5,
