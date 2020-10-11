@@ -22,7 +22,7 @@ app.use(cors({
   allowMethods: ['GET', 'POST', 'DELETE'],
   allowHeaders: ['Content-Type', 'Authorization', 'Accept'],
 }))
-解析请求体
+// 解析请求体
 app.use(bodyParser())
 
 const router = require('./routes')
